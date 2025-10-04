@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixabay Image Search</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-    <load src="./partials/footer.html" />
+<body>
+  <main>
+    <div class="loader-gallery hidden">
+      <span class="loader"></span>
+    </div>
+    <section class="section container">
+      <form class="form">
+        <label>
+          <input class="form-input" type="text" name="search" placeholder="Search images..." required />
+        </label>
+        <button class="btn form-btn" type="submit">Search</button>
+      </form>
+      <ul class="gallery"></ul>
+      <button id="load-more" class="btn load-more-btn hidden-btn" type="button">
+        Load more
+      </button>
+    </section>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
 
-    <script type="module" src="./main.js"></script>
-  </body>
 </html>
