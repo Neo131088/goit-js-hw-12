@@ -1,7 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-import errorIcon from './img/Group (1).svg';
+import errorIcon from './img/Group(1).svg';
 
 import { getImagesByQuery } from './js/pixabay-api';
 import {
